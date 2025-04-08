@@ -18,7 +18,7 @@ WSL2's tmux integration to Powershell Core. yet another `${pane_current_path}` f
 set -g default-command '/usr/local/bin/pwsh-nologo.sh'
 ```
 
-2. add `psh-nologo.sh` into `/usr/local/bin/`.
+2. add `pwsh-nologo.sh` into `/usr/local/bin/`.
 
 ```bash
 #!/usr/bin/bash
