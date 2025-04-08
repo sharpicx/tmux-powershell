@@ -21,3 +21,4 @@ function cd {
         Write-Host "Path?: $path"
     }
 }
+Update-WSLPath
