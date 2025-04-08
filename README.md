@@ -1,5 +1,5 @@
 # tmux-powershell
-WSL2's tmux integration to Powershell Core.
+WSL2's tmux integration to Powershell Core. yet another `${pane_current_path}` for WSL2's tmux Windows integration.
 
 | Name | Description |
 |-|-|
@@ -60,4 +60,10 @@ function cd {
         Write-Host "Path?: $path"
     }
 }
+```
+
+4. start it
+
+```console
+PS> wsl -e zsh -c tmux new-session -t 1
 ```
