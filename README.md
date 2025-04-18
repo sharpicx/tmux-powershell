@@ -68,3 +68,14 @@ Update-WSLPath
 ```console
 PS> wsl -e zsh -c tmux new-session -t 1
 ```
+
+5. (optional) add this to `C:\Users\username\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`. based on the `profiles` object key > `lists` object array.
+
+```json
+    "commandline": "\"C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe\" -nologo -ExecutionPolicy Bypass -command \"wsl.exe -d Arch -e zsh -ic 'tmux has-session -t SHARPICX 2>/dev/null && exec tmux attach-session -t SHARPICX || exec tmux new-session -s SHARPICX'\"",
+                "guid": "{a3a2e83a-884a-5379-baa8-16f193a13b21}",
+                "hidden": false,
+                "name": "PowerShell 7 Preview",
+                "source": "Windows.Terminal.PowershellCore"
+            }
+```
